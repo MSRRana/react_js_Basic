@@ -62,12 +62,25 @@ const UseReducer = () => {
 
           <ul>
             {state.data.map((item, index) => (
-              <dic>
-                <li key={index}>
+              <div>
+                <li
+                  key={index}
+                  style={{
+                    background: "yellow",
+                    marginTop: 10,
+                    justifyContent: "space-between",
+                  }}
+                >
                   {item.title}
-                  <button onClick={() => deleteData(item.id)}>Delete</button>
+                  <br />
+                  <button
+                    onClick={() => deleteData(item.id)}
+                    style={{ marginTop: 10 }}
+                  >
+                    Delete
+                  </button>
                 </li>
-              </dic>
+              </div>
             ))}
           </ul>
           <form

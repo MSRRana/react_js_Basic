@@ -1,0 +1,5 @@
+ul {
+  flex: none;
+  justify-content: space-between;
+  background-color: aqua;
+}
